@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "sl",
+      "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
           "spec": false
