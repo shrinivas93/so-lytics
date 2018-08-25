@@ -1,3 +1,14 @@
-<p>
-  header works!
-</p>
+<div class="header-wrapper">
+  <div class="app-name">
+    <div class="logo"></div>
+    <div class="title">S.O.Lytics</div>
+  </div>
+  <div class="search">
+    <input class="search-bar" type="text" placeholder="UserId goes here" [(ngModel)]="userId" (keyup.enter)="search()" />
+    <div class="search-button" (click)="search()">Search</div>
+  </div>
+  <div class="user" *ngIf="user">
+    <img src="{{user.profile_image}}" title="{{user.display_name}}" />
+    <a href="{{user.link}}">{{user.display_name}} ({{user.reputation}})</a>
+  </div>
+</div>
